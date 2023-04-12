@@ -1,9 +1,10 @@
 # Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
- AIM:
+## AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
-Equipments Required:
-Hardware – PCs, Cyclone II , USB flasher
+## Equipments Required:
+Hardware – PCs,
+Cyclone II , USB flasher
 Software – Quartus prime
 Theory
 Introduction
@@ -57,16 +58,52 @@ Switch ON the main switch
 Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
 If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
-Program:
+## Program:
 /*
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
-Output:
-RTL
 
-Result:
+Developed by: KEERTHANA S
+
+RegisterNumber:  21222223006
+
+
+module volg_exp1 (a, b, y1, y2, y3, y4, y5, y6, y7, y8);
+
+input a, b;
+
+output y1, y2, y3, y4, y5, y6, y7, y8;
+
+not (y1, a);
+
+not (y2, b);
+
+or (y3, a, b);
+
+and (y4, a, b);
+
+xor (y5, a, b);
+
+xnor(y6, a, b);
+
+nor (y7, a, b);
+
+nand (y8, a, b);
+
+endmodule
+
+*/
+## Logic symbol & Truthtable:
+
+![Screenshot 2023-04-06 110655](https://user-images.githubusercontent.com/119477890/230281832-0749e4ad-fa8d-45dc-8f25-f99dab650fa5.png)
+
+
+## Output AND RTL realization:
+
+![Screenshot 2023-04-06 104523](https://user-images.githubusercontent.com/119477890/230279713-d25938e3-26a8-47ba-a0e6-6a1ba7a07c1c.png)
+
+
+![WhatsApp Image 2023-04-06 at 10 53 19 AM](https://user-images.githubusercontent.com/119477890/230279603-00b148af-4f62-4745-b888-33907b393afc.jpeg)
+
+
+## Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
